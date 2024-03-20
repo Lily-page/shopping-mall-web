@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d229825"],{de6d:function(n,u,e){"use strict";e.r(u);var t=function(){var n=this,u=n._self._c;return u("div",[n._v("全部商品")])},c=[],l=e("2877"),s={},d=Object(l["a"])(s,t,c,!1,null,null,null);u["default"]=d.exports}}]);
-//# sourceMappingURL=chunk-2d229825.0914993b.js.map
