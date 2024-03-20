@@ -1,1 +1,1 @@
-module.exports = {   publicPath: process.env.NODE_ENV === 'production' ? '/mall/' : '/' }
+module.exports = { publicPath: process.env.NODE_ENV === 'production' ? './' : '/' }
