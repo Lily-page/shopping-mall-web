@@ -1,0 +1,129 @@
+@import "@/assets/scss/_variables.scss";
+.order-detail {
+  width: 990px;
+  margin: 0 auto;
+  font-size: 12px;
+  border-top: 1px solid map-get($colors, "light-brown");
+
+  .detail-panel {
+    margin-bottom: 20px;
+    .panel-left {
+      width: 266px;
+      height: 200px;
+      background-color: map-get($colors, "white-4");
+      border: 1px solid map-get($colors, "light-grey-3");
+
+      .info-top {
+        height: 29px;
+        line-height: 29px;
+        background-color: map-get($colors, "white-2");
+        border-bottom: 1px solid map-get($colors, "light-grey-3");
+        h3 {
+          margin-left: 20px;
+        }
+      }
+
+      .info-con {
+        margin-left: 20px;
+
+        .info-item {
+          margin: 15px 0;
+
+          .info-title {
+            min-width: 62px;
+          }
+
+          .info-txt {
+            width: 162px;
+          }
+        }
+      }
+    }
+
+    .panel-right {
+      width: 721px;
+      height: 200px;
+      vertical-align: top;
+      border: 1px solid map-get($colors, "light-grey-3");
+      border-left: none;
+      background-color: map-get($colors, "white-4");
+
+      .status {
+        color: map-get($colors, "success");
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .status-tit {
+        height: 36px;
+        padding-top: 30px;
+
+        .status-icon {
+          margin: 0 17px 0 35px;
+        }
+
+        h3 {
+          vertical-align: top;
+          margin-top: 5px;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .delivery-info {
+      margin: 15px 0 0 90px;
+
+      .delivery-detail {
+        margin-left: 3px;
+
+        span {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+
+  .goods-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .order-sum {
+    margin-top: 20px;
+    text-align: right;
+    padding: 30px 0;
+    background-color: map-get($colors, "white-2");
+    font-family: Verdana, Tahoma, Helvetica, Arial, \5b8b\4f53;
+
+    .sum-item {
+      margin-bottom: 10px;
+    }
+
+    .sum-price {
+      display: inline-block;
+      width: 120px;
+      margin-right: 57px;
+    }
+
+    .real_pay-tit {
+      color: map-get($colors, "black-1");
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .real_pay-price {
+      display: inline-block;
+      width: 120px;
+      margin-right: 57px;
+      color: map-get($colors, "red");
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

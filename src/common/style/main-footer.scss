@@ -1,0 +1,108 @@
+@import "@/assets/scss/_variables.scss";
+.shopping-footer {
+  height: 90px;
+
+  .mod-service {
+    padding: 30px 0;
+    border-bottom: 1px solid map-get($colors, "light-grey-5");
+
+    .mod-service-inner {
+      width: 1190px;
+      margin: 0 auto;
+
+      .mod-service-list {
+        overflow: hidden;
+        height: 42px;
+
+        .mod-service-item {
+          width: 297px;
+
+          .mod-service-unit {
+            position: relative;
+            margin: 0 auto;
+            padding-left: 45px;
+            width: 180px;
+
+            .mod-service-tit {
+              overflow: hidden;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 36px;
+              height: 42px;
+              text-indent: -999px;
+            }
+
+            .mod-service-txt {
+              overflow: hidden;
+              width: 100%;
+              height: 42px;
+              line-height: 42px;
+              font-size: 18px;
+              font-weight: 700;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              color: map-get($colors, "black-2");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mod-copy {
+    width: 1190px;
+    margin: 0 auto;
+
+    .mod-copy-inner {
+      height: 130px;
+      line-height: 130px;
+      padding: 15px 0;
+      text-align: center;
+
+      .mod-copy-left {
+        width: 30%;
+        img {
+          width: 100px;
+          height: 100px;
+          vertical-align: middle;
+          margin-right: 25px;
+        }
+      }
+
+      .mod-copy-right {
+        width: 70%;
+        color: map-get($colors, "grey-1");
+        font-size: 12px;
+
+        .footer-item {
+          span {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mod-icons {
+  background-repeat: no-repeat;
+  background-size: 113px 86.5px;
+  background-image: url("//img10.360buyimg.com/imagetools/jfs/t1/211722/38/13035/9322/6215e10cEa9918ac1/7f8686ee76e42123.png");
+}
+
+.mod_service_duo {
+  background-position: 0 0;
+}
+
+.mod_service_kuai {
+  background-position: -38.5px 0;
+}
+
+.mod_service_hao {
+  background-position: -77px 0;
+}
+
+.mod_service_sheng {
+  background-position: 0 -44.5px;
+}

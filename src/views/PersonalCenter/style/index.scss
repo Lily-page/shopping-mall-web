@@ -1,0 +1,42 @@
+@import "@/assets/scss/_variables.scss";
+.personal-box,
+.personal-box * {
+  box-sizing: border-box;
+}
+
+.personal-box {
+  width: 100%;
+  padding-bottom: 100px;
+  background: map-get($colors, "white-4") repeat 0 0 none;
+  padding: 10px 0;
+  color: map-get($colors, "grey-2");
+
+  .personal-section-box {
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+
+    & > div {
+      float: left;
+    }
+
+    .personal-list-box {
+      width: 173px;
+      margin-right: 7px;
+      min-height: 700px;
+      background: map-get($colors, "white") repeat 0 0 none;
+    }
+
+    .personal-container-box {
+        width: 900px;
+        min-height: 700px;
+        padding-bottom: 25px;
+        background: map-get($colors,"white") repeat 0 0 none;
+    }
+  }
+}
+
+.personal-main-box {
+    padding: 11px 0 11px 30px;
+    min-height: 500px;
+}

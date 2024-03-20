@@ -1,0 +1,277 @@
+// @import "../../assets/style/theme.scss";
+@import "../../assets/scss/variables";
+// .header-box {
+//     background: $head-bgc;
+//     background-image: -webkit-linear-gradient(#000, #121212);
+//     background-image: linear-gradient(#000, #121212);
+//     width: 100%;
+// }
+
+.m-site-top {
+  height: 48px;
+  line-height: 0;
+  background: map-get($colors, "black-1");
+  font-size: 14px;
+  position: relative;
+  z-index: 105;
+
+  .site-item {
+    position: relative;
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .m-no-login {
+    margin-right: 8px;
+
+    a {
+      margin-left: 8px;
+    }
+  }
+
+  .m-user {
+    display: block;
+    width: 70px;
+    padding-left: 30px;
+    padding-right: 20px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .h-user-icon {
+    top: 8px;
+    left: 0;
+  }
+
+  .m-username {
+    margin-left: 3px;
+  }
+
+  .h-down-icon {
+    top: 10px;
+    right: 0;
+  }
+
+  .h-down-icon-new {
+    line-height: 28px;
+    top: 10px;
+    right: 5px;
+  }
+
+  .site-item-nav {
+    position: absolute;
+    left: 0;
+    top: 48px;
+    height: 0;
+    opacity: 0;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 3px 28px rgb(0 0 0 / 10%);
+    transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
+    background: map-get($colors, "white");
+  }
+
+  .m-user-con {
+    .site-item-nav {
+      width: 100px;
+      left: 15px;
+    }
+  }
+
+  .site-item-nav.hidden {
+    height: 0;
+    opacity: 0;
+  }
+
+  .m-login-info {
+    .show {
+      // height: 215px;
+      height: 180px;
+    }
+  }
+
+  .site-nav {
+    background: map-get($colors, "white");
+    margin: 0;
+    padding: 0;
+
+    li {
+      height: 35px;
+      line-height: 35px;
+      padding: 0 10px;
+
+      a {
+        display: block;
+        font-size: 14px;
+        color: map-get($colors, "grey-1");
+      }
+
+      &:hover {
+        background: map-get($colors, "primary");
+
+        a {
+          color: map-get($colors, "white");
+        }
+      }
+    }
+  }
+
+  .site-item-nav.show {
+    opacity: 1;
+
+    .site-nav {
+      display: block;
+    }
+  }
+
+  .m-line {
+    border-color: map-get($colors, "grey-1");
+    margin: 17px 3px 0 6px;
+  }
+
+  .m-help {
+    position: relative;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 8px;
+    margin-left: 11px;
+  }
+
+  .m-clauses-con {
+    position: relative;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 11px;
+
+    .m-clauses {
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+    }
+
+    .site-item-nav {
+      width: 160px;
+    }
+
+    .show {
+      height: 70px;
+    }
+  }
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.m-site-top,
+.m-site-top a {
+  color: map-get($colors, "light-grey-1");
+}
+
+.m-site-top .m-no-login,
+.m-site-top .m-user {
+  height: 48px;
+  line-height: 48px;
+}
+
+.h-icons {
+  position: absolute;
+}
+
+.hidden,
+.hide {
+  display: none;
+}
+
+.nav-location {
+  height: 48px;
+  line-height: 48px;
+}
+
+.m-line {
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  border-right: 1px solid map-get($colors, "light-grey-1");
+}
+
+//
+.iconfont {
+  font-size: 24px;
+  color: map-get($colors,"white-1");
+}
+
+.nav-box {
+  height: 100px;
+  line-height: 100px;
+  background-color: map-get($colors,"white-3");
+}
+
+.main-box {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.nav-box-logo {
+  width: 401.5px;
+  height: 90px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav-box-search {
+  float: left;
+  margin-left: 5%;
+  position: relative;
+}
+.nav-box-search > input {
+  display: inline-block;
+  width: 511px;
+  border: 2px solid map-get($colors,"primary");
+  border-radius: 20px;
+  height: 40px;
+  padding-left: 5px;
+}
+.nav-box-search i {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.nav-box-gouwuche {
+  float: left;
+  margin-left: 5%;
+
+  button {
+    border-radius: 25px;
+    background-color: map-get($colors,"white");
+    border: 2px solid map-get($colors,"primary");
+    font-size: 16px;
+    padding: 5px 10px;
+    color: map-get($colors,"grey-1");
+
+    i {
+      color: map-get($colors,"primary");
+    }
+  }
+}
+
+.nav-box-gouwuche-count {
+  display: inline-block;
+  background-color: map-get($colors,"red");
+  color: map-get($colors,"white");
+  text-align: center;
+  border-radius: 30px;
+  min-width: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  margin-left: -2px;
+  margin-right: 2px;
+}
