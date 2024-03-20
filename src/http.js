@@ -7,7 +7,7 @@ import store from "./store";
 const http = axios.create({
   // baseURL: "http://localhost:3000/mall/api",
   // baseURL: "https://mall-server.herokuapp.com/mall/api",
-  baseURL: "https://shopping-mall-server-9kri.vercel.app/mall/api",
+  baseURL: "https://shopping-mall-server-seven.vercel.app/mall/api",
 });
 
 http.interceptors.request.use(
